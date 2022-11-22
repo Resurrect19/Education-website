@@ -69,7 +69,11 @@ nav{
     position: fixed;
     top: 0;
     z-index: 11;
-    background-color:var(--magenta);
+    background:transparent;
+}
+.window-scroll{
+    background-color: var(--dark-purple);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 .nav_container{
     height: 100%;
@@ -93,12 +97,12 @@ nav button{
     font-size: 1rem;
 }
 .nav_menu a:hover{
-    color:var(--navy-blue);
+    color: black;
 }
 header{
     position: relative;
     top: 7rem;
-    height: 70vh;
+    height: 90vh;
     overflow:hidden;
     margin-bottom: 5rem;
 }
@@ -122,7 +126,7 @@ header{
 }
 .categories{
     background-color:var(--dark-purple);
-    height: 60vh;
+    height: 28rem;
 }
 .categories_container{
     display: grid;
@@ -150,4 +154,33 @@ header{
 }
 .category:hover{
     box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
 } 
+.icon_categories{
+    background-color:var(--light-purple);
+    color: var(--navy-blue);
+    padding: 0.5rem;
+    border-radius: 0.8rem;
+}
+.category:nth-child(2) .icon_categories{
+    background: var(--bluish-green);
+}
+.category:nth-child(3) .icon_categories{
+    background: var(--dark-grey);
+}
+.category:nth-child(4) .icon_categories{
+    background:var(--dark-purple);
+}
+.category:nth-child(5) .icon_categories{
+    background: var(--light-blue);
+}
+.category:nth-child(6) .icon_categories{
+    background: var(--dark-purple);
+}
+.category h4{
+    text-transform: capitalize;
+    margin: 1.3rem 0rem 1rem 0rem;
+}
+.category p{
+    font-size: 0.95rem;
+}
