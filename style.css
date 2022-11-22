@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --navy-blue:#051527;
+    --bluish-green:#1683a0;
+    --light-blue:#b8e0e1;
+    --magenta:#2e1f37;
+    --olive-green:#0c3c42;
+    --purple:#3e4894;
+    --dark-purple:#322b5b;
+    --bright-purple:#662e68;
+    --light-purple:#b0b8db;
+    --dark-grey:#4e5572;
+
+    --transition: all 400ms ease;
+
+    --container-width-lg:80%;
+    --container-width-md:90%;
+    --container-width-sm:94%;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light-blue);
+    background-color: var(--navy-blue);
+}
+.container{
+        width: var(--container-width-lg);
+        margin: 0 auto;
+}
+a{
+    color: var(--light-blue);
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+section{
+    padding: 5rem 0;
+
+}
+.btn{
+    color: var(--dark-purple);
+    background-color:var(--light-purple);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.btn:hover{
+    color: var(--light-purple);
+    background-color: transparent;
+    border-color: var(--light-purple);
+}
+nav{
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    background-color: var(--bright-purple);
+}
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav button{
+    display: none;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    text-transform: capitalize;
+    font-weight: 550;
+    
+}
+.nav_menu a{
+    transition: var(--transition);
+    font-size: 1rem;
+}
+.nav_menu a:hover{
+    color:var(--navy-blue);
+}
+header{
+    position: relative;
+    top: 7rem;
+    height: 70vh;
+    overflow:hidden;
+    margin-bottom: 5rem;
+}
+.header_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr );
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+.header_left h1{
+    font-size: 2.5rem;
+}
+.header_left p{
+    margin: 1rem 0rem 1.5rem 0rem;
+}
+.btn-primary{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 600;
+}
