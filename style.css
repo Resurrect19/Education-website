@@ -184,3 +184,77 @@ header{
 .category p{
     font-size: 0.95rem;
 }
+.courses{
+    margin-top: 10rem;
+    text-align: center;
+}
+.courses h2{
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+.courses_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+.course{
+    background-color:var(--dark-purple);
+    border: 2px solid transparent;
+}
+.course:hover{
+    background-color: transparent;
+    transition: var(--transition);
+    border-color: var(--bright-purple);
+}
+.course-image img{
+    width: 100%;
+    height: 40vh;
+}
+.course_info{
+    padding: 2rem;
+}
+.course_info h3{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+
+}
+.course_info p{
+    margin: 1rem 0rem 2rem 0rem;
+    
+}
+.faqs{
+    margin-top: 10rem;
+    background-color: var(--dark-purple);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.8);
+}
+.faqs h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.faqs_container{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.faq{
+    background-color: var(--bright-purple);
+    padding: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    height: fit-content;
+    align-items: center;
+    cursor: pointer;
+}
+.faq_icon{
+    align-self: flex-start;
+    font-size: 1rem;
+}
+.faq p{
+    margin-top: 1.5rem;
+    display: none;
+}
+.faq.open p{
+    display: block;
+}
