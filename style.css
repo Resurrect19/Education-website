@@ -258,3 +258,44 @@ header{
 .faq.open p{
     display: block;
 }
+.testimonials_container{
+    overflow-x: hidden;
+    margin-bottom: 5rem;
+    position: relative;
+}
+.testimonials_container h3{
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.testimonial{
+    padding: 2rem 0 0 0;
+}
+.avatar{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 1rem solid var(--magenta);
+}
+.student_info{
+    text-align: center;
+}
+.testimonial_body{
+    background-color: var(--bright-purple);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+.testimonial_body::before{
+    content:"";
+    background:linear-gradient(135deg, transparent, var(--bright-purple), var(--bright-purple));
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    left: 50%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
