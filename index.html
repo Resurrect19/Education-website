@@ -13,6 +13,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@300;600;800;900&family=Poppins:wght@300;400&family=Roboto:wght@300&family=Tapestry&family=Ubuntu:wght@300&display=swap"
         rel="stylesheet">
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -202,10 +206,10 @@
             </article>
         </div>
     </section>
-    <section class="container testimonials_container">
+    <section class="container testimonials_container mySwiper">
         <h3>student's testimonials</h3>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="person/img1.jpg" alt="person">
                 </div>
@@ -217,7 +221,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita, fugit ea eum repellat possimus itaque laborum placeat consequatur saepe?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, modi.</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="person/img2.jpg" alt="person">
                 </div>
@@ -229,7 +233,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita, fugit ea eum repellat possimus itaque laborum placeat consequatur saepe?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, modi.</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="person/img3.jpg" alt="person">
                 </div>
@@ -241,7 +245,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem expedita, fugit ea eum repellat possimus itaque laborum placeat consequatur saepe?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, modi.</p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial swiper-slide">
                 <div class="avatar">
                     <img src="person/img4.jpg" alt="person">
                 </div>
@@ -255,12 +259,80 @@
             </article>
             
         </div>
+
+        <div class="swiper-pagination"></div>
     </section>
+    <footer>
+        <div class="container footer_container">
+            <div class="footer_1">
+                <a href="index.html" class="footer_logo"><h4>Pearls</h4></a>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, aliquam.</p>
+            </div>
+            <div class="footer_2">
+                <h4>permalinks</h4>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#"> Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer_4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+01234-1456-4267-9364</p>
+                    <p>shashwat@gmail.com</p>
+                </div>
+            
+            <ul class="footer_social">
+                <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer_copywrite">
+            <small>Copywrite &copy; pearls youtube tutorial</small>
+        </div>
+    </footer>
 
 
 
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          breakpoints:{
+            600: {
+                slidesPerView:2
+            }
+          }
+        });
+      </script>
 </body>
 
 </html>
